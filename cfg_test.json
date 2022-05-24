@@ -1,0 +1,58 @@
+[
+    {
+
+      "Stream" : {
+        "fichero_tramas" : "./data//in/ana_julia_escenario2_online.trm",
+        "pausa_generador" : false,
+        "resultados_intermedios" : false
+      },
+
+      "MotorTranscrripcion" : {
+        "palabra_sincronizacion" : "",
+        "instante_palabra_sincronizacion" : 0,
+        "resultados_intermedios" : false
+      },
+
+      "Distacia" : {
+        "tipo_distancia" : "DEFECTO",
+        "tolerancia_desigualdad" : 0.6,
+        "tolerancia_igualdad" : 0.1
+      },
+
+      "Entropia" : {
+        "tipo_entropia" : "DEFECTO",
+        "largo_min_palabra" : 2
+      },
+
+      "Algoritmo" : {
+        "tipo_algoritmo" : "SW",
+        "coste_igualdad" : 1,
+        "coste_desigualdad" : -1,
+        "coste_insercion_subtitulo" : -2,
+        "coste_insercion_transcripcion" : -2
+      },
+
+
+     "Sincronizador" : {
+       "sincroniza" : true,
+       "fichero_guion" : "./data/in/Guion_telecinco_articulo_original.srt",
+       "pierde_palabras" : false,
+       "confianza_minima" : 0.7,
+       "longitud_minima_frase" : 6,
+       "score_minimo" : 0.6,
+       "tiempo_adelanto": 0,
+       "tiempo_maximo_sin_sincronizar": 20000,
+       "nivel_trazas_sincronizador" : 0
+
+      },
+
+      "GestorTranscripcion" : {
+        "fichero_transcripcion" : "./data/out/Guion_telecinco_articulo_original.trm",
+        "fichero_frases" : "./data/out/Guion_telecinco_articulo_original.frs",
+        "fichero_salida_guion" : "./data/out/Guion_telecinco_articulo_original_sincro.srt",
+        "ciclos" : 10
+      }
+
+
+    }
+]
